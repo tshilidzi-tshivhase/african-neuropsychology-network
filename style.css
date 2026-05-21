@@ -811,7 +811,24 @@ footer {
     --fs-h2: 1.5rem;
     --fs-h3: 1.2rem;
   }
+.hero-content {
+  flex-direction: column;
+  text-align: center;
+}
 
+.hero-visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
   nav {
     padding: var(--space-md);
   }
