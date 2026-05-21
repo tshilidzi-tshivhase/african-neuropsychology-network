@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | African Neuropsychology Network</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="African Neuropsychology Network Logo">
+            <span>African Neuropsychology Network</span>
+        </div>
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="vision.html">Vision & Mission</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="research.html">Research & Resources</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="events.html">Events & Training</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <div>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with the African Neuropsychology Network.</p>
+
+            <div class="hero-buttons">
+                <a href="#contact-form" class="btn btn-primary">Send a Message</a>
+                <a href="membership.html" class="btn btn-secondary">Join the Network</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <img src="images/banner.jpg" alt="Contact ANN">
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact-form" class="contact">
+    <h2>Get In Touch</h2>
+    <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Reach out with questions, partnership opportunities, research inquiries, or membership requests.</p>
+
+    <div class="contact-content">
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@ann.org" style="color: white; border-bottom: 1px solid white;">info@ann.org</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🌍</div>
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>Africa-based Network</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🔗</div>
+                <div class="contact-details">
+                    <h3>Connect on LinkedIn</h3>
+                    <p><a href="#" style="color: white; border-bottom: 1px solid white;">African Neuropsychology Network</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📋</div>
+                <div class="contact-details">
+                    <h3>Quick Links</h3>
+                    <p>
+                        <a href="membership.html" style="color: white; display: block;">Membership</a>
+                        <a href="events.html" style="color: white; display: block;">Events</a>
+                        <a href="research.html" style="color: white; display: block;">Research</a>
+                        <a href="get-involved.html" style="color: white;">Get Involved</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We will respond within 5-7 business days.');">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" maxlength="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" maxlength="50"required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" style="padding: 12px; border: none; border-radius: 8px; font-family: var(--font-body); font-size: 1rem; background: rgba(255, 255, 255, 0.95); transition: all 0.3s ease;" required>
+                    <option value="">Select a subject...</option>
+                    <option value="membership">Membership Inquiry</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="research">Research Collaboration</option>
+                    <option value="event">Event Registration</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="50" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== RESPONSE TIME SECTION ===== -->
+<section class="about">
+
+    <h2>Response Time</h2>
+
+    <p class="section-subtitle center-text">
+        ANN aims to respond to all inquiries within 5–7 business days. For urgent matters, please include "URGENT" in your subject line.
+    </p>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About ANN</h4>
+            <ul>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="vision.html">Vision & Mission</a></li>
+                <li><a href="team.html">Leadership</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 African Neuropsychology Network. All rights reserved. | <a href="#" style="color: #888;">Privacy Policy</a> | <a href="#" style="color: #888;">Terms of Service</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
