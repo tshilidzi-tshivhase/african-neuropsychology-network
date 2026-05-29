@@ -1432,3 +1432,24 @@ section:has(.stats-grid) h2 {
   }
 
 }
+/* =============================================
+   GET INVOLVED BUTTON FIX
+   ============================================= */
+
+#get-involved .btn-primary,
+#get-involved .btn-gold,
+.get-involved .btn-primary,
+.get-involved .btn-gold {
+  background: var(--color-accent) !important;
+  color: white !important;
+  opacity: 1 !important;
+  border: none !important;
+}
+
+#get-involved .btn-primary:hover,
+#get-involved .btn-gold:hover,
+.get-involved .btn-primary:hover,
+.get-involved .btn-gold:hover {
+  background: var(--color-accent-dark) !important;
+  color: white !important;
+}
