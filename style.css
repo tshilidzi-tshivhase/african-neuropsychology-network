@@ -1299,3 +1299,136 @@ section:has(.stats-grid) h2 {
   object-fit: cover;
   object-position: top;
 }
+/* =============================================
+   MOBILE LOGO FIX
+   ============================================= */
+
+.logo img {
+  width: auto;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    align-items: center;
+  }
+
+  .logo img {
+    height: 42px;
+    width: auto;
+    max-width: none;
+  }
+
+}
+
+/* =============================================
+   READY TO MAKE A DIFFERENCE BUTTON FIX
+   ============================================= */
+
+#cta .btn-primary,
+#cta .btn-gold {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  opacity: 1;
+}
+
+#cta .btn-primary:hover,
+#cta .btn-gold:hover {
+  background: var(--color-accent-dark);
+  color: white;
+}
+
+/* =============================================
+   MEMBER IMAGE FIXES
+   ============================================= */
+
+.member-image {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Prevent faces from being cropped too harshly */
+.member-card img {
+  object-position: center 20%;
+}
+
+/* =============================================
+   MOBILE MEMBER IMAGE HEIGHT
+   ============================================= */
+
+@media (max-width: 768px) {
+
+  .member-image {
+    height: 320px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .member-image {
+    height: 280px;
+  }
+
+}
+/* =============================================
+   SQUARE CO-CHAIR IMAGES
+   ============================================= */
+
+.member-image {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+/* =============================================
+   MOBILE HERO IMAGE FIX
+   ============================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: var(--space-xl);
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px;
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero-visual img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+}
